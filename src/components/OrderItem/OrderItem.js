@@ -1,4 +1,5 @@
 import React from 'react';
+import './OrderItem.css';
 
 const OrderItem = props => {
   return (
@@ -13,7 +14,7 @@ const OrderItem = props => {
           <p className='OrderItemPrice'>
             {props.price + ' KGS'}
           </p>
-          <button onClick={props.remove}>&times;</button>
+          <button className='RemoveItemButton' onClick={props.remove}>&times;</button>
         </div>
       </div>
   );

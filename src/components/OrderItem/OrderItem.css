@@ -1,0 +1,30 @@
+.OrderItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+  border-bottom: 1px solid #bbb;
+}
+
+.OrderItem p {
+  margin: 0;
+  padding: 8px 0;
+}
+
+.OrderItemQtyPriceInfo {
+  display: flex;
+  column-gap: 5px;
+  text-align: right;
+}
+
+.OrderItemQty {
+  padding-right: 10px !important;
+}
+
+.RemoveItemButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 2px;
+  cursor: pointer;
+}

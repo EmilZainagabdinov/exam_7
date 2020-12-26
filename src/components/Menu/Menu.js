@@ -1,5 +1,6 @@
 import React from 'react';
 import MenuItem from '../MenuItem/MenuItem';
+import './Menu.css';
 
 const Menu = props => {
   const menuList = props.menuitems.map(item => {
@@ -16,6 +17,7 @@ const Menu = props => {
 
   return (
       <div className='Menu'>
+        <h3 className='BlockTitle'>Menu</h3>
         {menuList}
       </div>
   );

@@ -1,0 +1,10 @@
+.Menu {
+  border: 3px solid firebrick;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  position: relative;
+}

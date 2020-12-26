@@ -1,5 +1,6 @@
 import React from 'react';
 import OrderItem from '../OrderItem/OrderItem';
+import './Order.css';
 
 const Order = props => {
   const orderDetails = props.order.map(orderItem => {
@@ -14,24 +15,27 @@ const Order = props => {
     );
   });
 
-  let total = (<p>Order is empty!<br/>Please add some items!</p>);
+  let total = 'You haven\'t ordered anything yet';
+  const totalOrderClasses = ['OrderTotal'];
 
   if (props.order.length > 0) {
     total = props.order.reduce((acc, item) => {
       return acc + (item.price * item.quantity);
     }, 0);
 
-    total = 'Order total: ' + total;
+    total = `Order total: ${total} KGS` ;
+    totalOrderClasses.push('OrderTotal_hasItems');
   }
 
   return (
       <div className='Order'>
-        <div className="OrderDetails">
+        <h3 className='BlockTitle'>Order details</h3>
+        <div className='OrderDetails'>
           {orderDetails}
         </div>
-        <div className="OrderTotal">
+        <h4 className={totalOrderClasses.join(' ')}>
           {total}
-        </div>
+        </h4>
       </div>
   );
 };
