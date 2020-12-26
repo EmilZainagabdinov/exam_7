@@ -1,0 +1,35 @@
+.App {
+  /*text-align: center;*/
+  display: flex;
+  column-gap: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Order {
+  width: 30%;
+  border: 1px solid grey;
+}
+
+.Menu {
+  border: 1px solid grey;
+  flex-grow: 1;
+}
+
+.OrderItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.OrderItemQtyPriceInfo {
+  display: flex;
+}
+
+.Menu {
+}
+
+.MenuItem,
+.OrderItem {
+  border: 1px solid steelblue;
+  margin: 5px;
+}
