@@ -7,7 +7,7 @@ import friesImage from '../assets/fries.png';
 import pepsiImage from '../assets/pepsi.png';
 import './App.css';
 import Menu from '../components/Menu/Menu';
-import Order from '../components/OrderDetails/Order';
+import Order from '../components/Order/Order';
 
 const App = () => {
   const MENUITEMS = [
